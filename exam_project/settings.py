@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'exam_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Используем MySQL/MariaDB
-        'NAME': os.getenv('NAME'),                      # Имя вашей базы данных
-        'USER': os.getenv('USER'),            # Имя пользователя базы данных
+        'NAME': os.getenv('BDNAME'),                      # Имя вашей базы данных
+        'USER': os.getenv('BDUSER'),            # Имя пользователя базы данных
         'PASSWORD': os.getenv('PASSWORD'),              # Пароль пользователя
         'HOST': os.getenv('HOST'),                   # Хост базы данных (обычно 'localhost')
         'PORT': '3306',                        # Порт базы данных (по умолчанию 3306 для MySQL/MariaDB)
