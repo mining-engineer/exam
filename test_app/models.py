@@ -20,7 +20,7 @@ class TestQuestion(models.Model):
     count_variant = models.IntegerField(default=1)
 
     def __str__(self):
-        return f"{self.text}"
+        return f"{self.question}"
     
 
 class OpenQuestion(models.Model):
@@ -30,7 +30,7 @@ class OpenQuestion(models.Model):
     weight = models.IntegerField(default=1)  # Вес вопроса в баллах
 
     def __str__(self):
-        return f"{self.text}"
+        return f"{self.question}"
 
 
 class TestQuestionAnswer(models.Model):
@@ -39,7 +39,7 @@ class TestQuestionAnswer(models.Model):
     is_correct = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.text} (Правильный: {self.is_correct})"
+        return f"{self.answer} (Правильный: {self.is_correct})"
 
 
 class OpenQuestionAnswer(models.Model):
@@ -58,4 +58,4 @@ class TestResult(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.student.username} - {self.question.text} - {self.student_answer.text}"
+        return f"{self.student.username} - {self.question} - {self.student_answer}"

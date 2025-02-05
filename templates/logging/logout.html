@@ -1,0 +1,12 @@
+<!-- templates/logging/logout.html -->
+{% extends 'base.html' %}
+
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Logout</h2>
+    <p>You have been logged out successfully.</p>
+    <a href="{% url 'user_app:login' %}" class="btn btn-primary">Login Again</a>
+</div>
+{% endblock %}

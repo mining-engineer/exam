@@ -1,0 +1,44 @@
+<!--templates/index.html-->
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Добро пожаловать на главную страницу!</h1>
+    <p class="lead text-center">Это пример страницы, использующей Django и Bootstrap.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Карточка 1</h5>
+                    <p class="card-text">Некоторый текст, описывающий содержимое карточки.</p>
+                    <a href="#" class="btn btn-primary">Перейти к чему-то</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Карточка 2</h5>
+                    <p class="card-text">Некоторый текст, описывающий содержимое карточки.</p>
+                    <a href="#" class="btn btn-primary">Перейти к чему-то</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Карточка 3</h5>
+                    <p class="card-text">Некоторый текст, описывающий содержимое карточки.</p>
+                    <a href="#" class="btn btn-primary">Перейти к чему-то</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
